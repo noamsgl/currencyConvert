@@ -58,9 +58,12 @@ public class ExchangeRateAPIImpl implements ExchangeRateAPI {
         }
     }
 
-    @Override
-    public void setBaseCurrency(String currencyCode) {
-        this.baseCurrencyCode = currencyCode;
+    public String getBaseCurrencyCode() {
+        return baseCurrencyCode;
+    }
+
+    public void setBaseCurrencyCode(String baseCurrencyCode) {
+        this.baseCurrencyCode = baseCurrencyCode;
     }
 
     @Override
